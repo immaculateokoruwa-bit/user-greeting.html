@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+<script>
+        let grade = parseFloat(prompt("Enter your grade (0-100):"));
+
+        if (grade >= 70) {
+            grade = "A";
+        } else if (grade >= 50 && grade <= 60) {
+            grade = "C";
+        } else if (grade >= 0 && grade <= 40) {
+            grade = "F";
+        }
+        document.write('<h1>Your grade is: ' + grade + '</h1>');
+</script>
+
+</body>
+</html>
